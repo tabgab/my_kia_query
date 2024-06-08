@@ -8,4 +8,22 @@ You can also modify the relevant Region information in the script if your vehicl
 There might be limitations however, that come from the API. 
 You can check out that repo here: https://github.com/Hyundai-Kia-Connect/hyundai_kia_connect_api
 
+The Hyundai Kia Connect API supports several region and brand options. Here are the available options:
+
+Regions:
+1: Europe
+2: Canada
+3: USA
+4: China
+5: Australia
+
+Brands:
+1: Kia
+2: Hyundai
+3: Genesis (only available in Canada)
+To use these options, you would typically instantiate the VehicleManager class with the appropriate region and brand integers. For example:
+
+vm = VehicleManager(region=2, brand=1, username="username@gmail.com", password="password", pin="1234")
+In this example, region=2 refers to Canada, and brand=1 refers to Kia.
+
 
